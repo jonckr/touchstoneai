@@ -1,7 +1,7 @@
 {
   "name": "touchstoneai",
   "version": "0.1.0",
-  "description": "The standard for AI tool quality — score any MCP server 0-100",
+  "description": "The standard for AI tool quality \u2014 score any MCP server 0-100",
   "type": "module",
   "bin": {
     "touchstoneai": "./dist/cli.js"
@@ -21,7 +21,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "check": "npm run lint && npm run typecheck && npm run test"
+    "check": "npm run lint && npm run typecheck && npm run test",
+    "prepare": "git config core.hooksPath .githooks"
   },
   "keywords": [
     "mcp",

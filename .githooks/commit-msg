@@ -1,0 +1,4 @@
+#!/bin/sh
+# Strip AI attribution trailers from commit messages
+sed -i.bak '/^Co-Authored-By:.*\(Paperclip\|Claude\|noreply@paperclip\|noreply@anthropic\)/d' "$1"
+rm -f "$1.bak"
